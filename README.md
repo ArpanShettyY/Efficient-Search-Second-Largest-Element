@@ -6,7 +6,7 @@ The algorithm will have at most n + logn - 2 comparisons (however when n is not 
 It uses extra space proportional to (logn) ^ 2.
 
 **To Compile Use:**
-    gcc sanity_client.c A2_PES1UG19CS086.c -lm
+    gcc client.c code.c -lm
 This is because I have included math.h to use ceil and log2 funcations.
 
 **Data Structure Used:**
