@@ -11,13 +11,13 @@ This is because I have included math.h to use ceil and log2 funcations.
 
 **Data Structure Used:**
         A varying column size table kind of structure is made using array of pointers.
-        1.Element Node:
+        - Element Node:
             Each element is represented in the form of a structure "ele"(which is same as a singly linked list).
             It has 2 attributes:
             i)The Value: The number itself
             ii)Next pointer: If the current node is the head , then it points to a list which has elements against which this element has won or is greater than.
                              If the current node is not the head, then it just points to another node besides itself who has lost to the head of the list
-        2.Pointer Array: An array of pointer(pointing to the head of the list of above structure type) of approx (logn + 1) is used.
+        - Pointer Array: An array of pointer(pointing to the head of the list of above structure type) of approx (logn + 1) is used.
           They represent different level blocks of the tournament(block n tells the element its pointing to has won against n elements)
           So if an element wins in a block it can progress to the next block. If not it gets appended to next pointer list of the winner.
           So the final block will only have the winner(largest element) which has won all its matches .
